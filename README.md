@@ -1,4 +1,5 @@
 Gerador de Imagens de Marca
+
 Descrição
 Este projeto é um gerador automatizado de imagens para marcas, que coleta dados da marca, cria um prompt baseado nessas informações, gera uma imagem utilizando a API DALL-E 3, e em seguida vetoriza a imagem para formatos mais amigáveis para uso em branding e marketing.
 
