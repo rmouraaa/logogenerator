@@ -1,83 +1,63 @@
-Gerador de Imagens de Marca
 
-Descrição
+# Gerador de eBook
 
-Este projeto é um gerador automatizado de imagens para marcas, que coleta dados da marca, cria um prompt baseado nessas informações, gera uma imagem utilizando a API DALL-E 3, e em seguida vetoriza a imagem para formatos mais amigáveis para uso em branding e marketing.
+## Descrição
 
+O **Gerador de eBook** é um projeto que automatiza a criação de eBooks a partir de capítulos em texto. Ele utiliza diversos scripts em Python para compilar, editar e formatar o conteúdo, resultando em um eBook final em PDF.
 
-Funcionalidades
+## Funcionalidades
 
-Coleta de dados da marca.
+- Compilação automática de capítulos de texto em um eBook.
+- Edição e formatação do conteúdo.
+- Geração do eBook em formato PDF.
 
-Criação de prompt automático.
+## Instalação
 
-Geração de imagem da marca com DALL-E 3.
+Para instalar e executar este projeto localmente, siga os passos abaixo:
 
-Vetorização da imagem gerada.
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/seu-usuario/gerador-ebook.git
+    cd gerador-ebook
+    ```
 
-Dependências
+2. Crie um ambiente virtual e instale as dependências:
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # No Windows, use `venv\Scripts\activate`
+    pip install -r requirements.txt
+    ```
 
-Python 3.x
+## Uso
 
-openai (para a API DALL-E 3)
+Para gerar seu eBook, siga os passos abaixo:
 
-PIL (Python Imaging Library)
+1. Certifique-se de que todos os capítulos estejam no diretório correto (`content`).
+2. Execute o script principal para compilar o eBook:
+    ```bash
+    python app.py
+    ```
+3. O eBook gerado será salvo como `ebook.pdf` no diretório raiz do projeto.
 
-Outras bibliotecas Python (json, requests, subprocess, os)
+## Contribuição
 
-Instalação
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests. Para contribuir:
 
-Para instalar as dependências necessárias, execute:
+1. Faça um fork do projeto
+2. Crie uma nova branch com sua feature:
+    ```bash
+    git checkout -b minha-feature
+    ```
+3. Commit suas mudanças:
+    ```bash
+    git commit -m 'Adiciona minha feature'
+    ```
+4. Envie para a branch original:
+    ```bash
+    git push origin minha-feature
+    ```
+5. Abra um Pull Request
 
+## Licença
 
-pip install openai pillow requests
-
-
-Configuração
-
-Antes de executar o projeto, é necessário configurar a chave de API para o DALL-E 3 no arquivo config.py.
-
-
-
-Uso
-
-Para executar o programa, use:
-
-
-python app.py
-
-
-Siga as instruções no terminal para inserir os detalhes da sua marca. O programa irá automaticamente gerar e vetorizar uma imagem baseada nas informações fornecidas.
-
-
-
-Estrutura do Projeto
-
-
-app.py: Script principal para executar o programa.
-
-ui.py: Módulo para coletar dados da marca.
-
-prompt.py: Módulo para criar o prompt para a geração da imagem.
-
-generator.py: Módulo para gerar a imagem usando a API DALL-E 3.
-
-vector.py: Módulo para vetorizar a imagem gerada.
-
-
-Exemplos
-
-Após executar o script app.py e seguir as instruções, uma imagem da marca será gerada e salva no diretório especificado, além de ser convertida para o formato SVG.
-
-
-
-Licença
-
-[Opensource]
-
-
-
-Contato
-
-[contato@rodrigofernandes.com]
-
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
